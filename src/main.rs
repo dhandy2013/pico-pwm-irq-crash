@@ -83,6 +83,8 @@ fn main() -> ! {
     // Running this block of code enables the PWM_IRQ_WRAP interrupt handler
     // function to be called. Unfortunately, whenever PWM_IRQ_WRAP() is called
     // the main program crashes immediately. Even if the function is empty.
+    //
+    // Change this to ``true`` to cause the crash:
     if false {
         // Tell the NVIC to start calling the PWM interrupt handler function
         unsafe {
